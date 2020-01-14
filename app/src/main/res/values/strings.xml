@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JetPackTest</string>
+    <string name="welcome_test">JetPack练习 使用Navigation实现欢迎登录页</string>
+    <string name="has_account_login">已有账号？ 登录</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+    <string name="welcome_back">欢迎回来</string>
+    <string name="enter_account">输入账号</string>
+    <string name="enter_psw">输入密码</string>
+    <string name="login">登录</string>
+    <string name="join_us">加入我们！</string>
+    <string name="enter_e_mail">输入邮箱</string>
+</resources>
