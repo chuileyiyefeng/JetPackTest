@@ -1,5 +1,6 @@
-package com.example.rico.jetpacktest.fragment
+package com.example.rico.jetpacktest.fragment.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.navOptions
+import com.example.rico.jetpacktest.HomeActivity
 import com.example.rico.jetpacktest.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
@@ -25,21 +27,12 @@ class LoginFragment : Fragment(), View.OnClickListener {
         tv_login.setOnClickListener(this)
         ll_back.setOnClickListener(this)
     }
-    private val navOption = navOptions {
-        anim {
-            enter = R.anim.slide_in_right
-            exit = R.anim.slide_out_left
-            popEnter = R.anim.slide_in_left
-            popExit = R.anim.slide_out_right
-        }
-    }
+
 
     override fun onClick(v: View) {
         when (v.id) {
             R.id.tv_login -> {
-                val bundle = Bundle();
-                bundle.putString("test", "test")
-                Navigation.findNavController(tv_login).navigate(R.id.action_register, bundle, navOption)
+                activity?.startActivity(Intent(activity, HomeActivity::class.java))
             }
             R.id.ll_back -> {
                 Navigation.findNavController(ll_back).navigateUp()

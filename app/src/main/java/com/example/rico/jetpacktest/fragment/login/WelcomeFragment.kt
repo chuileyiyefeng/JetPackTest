@@ -1,4 +1,4 @@
-package com.example.rico.jetpacktest.fragment
+package com.example.rico.jetpacktest.fragment.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
