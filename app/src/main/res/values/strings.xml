@@ -10,4 +10,7 @@
     <string name="login">登录</string>
     <string name="join_us">加入我们！</string>
     <string name="enter_e_mail">输入邮箱</string>
+    <string name="home">主页</string>
+    <string name="info">内容</string>
+    <string name="mine">我的</string>
 </resources>
